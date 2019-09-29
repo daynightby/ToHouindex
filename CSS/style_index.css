@@ -1,0 +1,279 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{ 
+	margin: 0px;
+	padding: 0px;
+	background-image:url("../image/index_back.png");
+	background-repeat: no-repeat;
+}
+#head{
+	position: relative;
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+	height: 100px;
+	background: #F7F7F7;
+	background-image:url("../image/fooder.png");
+	background-repeat: repeat-x;
+}
+.head_min{
+	position: absolute;
+	padding: 0px;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	width: 1000px;
+	height: 100px;
+	float: left;
+}
+.head_bgrup{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	width: 750px;
+	height: 60px;
+	float: right;
+}
+.head_li{
+	float: left;
+	padding: 0;
+	margin: 20px 0px 20px 0px;
+	width: 150px;
+	height: 60px;
+	cursor: pointer;
+}
+#hl1{
+	background-image: url("../image/menu_word_toWelcom.png")
+}
+#hl2{
+	background-image: url("../image/menu_word_toIndex_active.png")
+}
+#hl3{
+	background-image: url("../image/menu_word_toCharacter.png")
+}
+#hl4{
+	background-image: url("../image/menu_word_toGame.png")
+}
+#hl5{
+	background-image: url("../image/menu_word_toAnime.png")
+}
+
+#hl1:hover{
+	background-image: url("../image/menu_word_toWelcom_active.png")
+}
+#hl2:hover{
+	background-image: url("../image/menu_word_toIndex_active.png")
+}
+#hl3:hover{
+	background-image: url("../image/menu_word_toCharacter_active.png")
+}
+#hl4:hover{
+	background-image: url("../image/menu_word_toGame_active.png")
+}
+#hl5:hover{
+	background-image: url("../image/menu_word_toAnime_active.png")
+}
+#top{
+	margin: 0px 0px 0px 0px;
+	padding: 0px;
+	width: 100%;
+	height: 300px;
+}
+.top_icon{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 150px;
+	background-image: url("../image/index_roder_icon.png");
+	float: left;
+}
+.top_list{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 800px;
+	background-image: url("../image/index_roder_mind.png");
+	background-repeat: repeat-x;
+	float: left;
+	
+}
+.top_list_li{
+	margin: 0;
+	padding: 0;
+	width: 200px;
+	height: 100%;
+	float: left;
+}
+.top_tear{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 50px;
+	background-image: url("../image/index_roder_tear.png");
+	float: left;
+}
+#mainbox{
+	margin: 0 auto;
+	padding: 0;
+	width: 1000px;
+	height: 1600px;
+	overflow: hidden;
+}
+#show{
+	position: relative;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 400px;
+}
+.button{
+	margin: 0;
+	padding: 0;
+	width: 50px;
+	height: 100%;
+	float: left;
+}
+
+/*框架定义*/
+.left{
+	width: 50px;
+	height: 300px;
+	background-image: url("../image/box_L.png");
+	float: left;
+}
+.right{
+	width: 50px;
+	height: 300px;
+	background-image: url("../image/box_R.png");
+	float: left;
+}
+
+.leftUp{
+	width: 50px;
+	height: 50px;
+	background-image: url("../image/box_LU.png");
+	float: left;
+}
+.leftDown{
+	width: 50px;
+	height: 50px;
+	background-image: url("../image/box_LD.png");
+	float: left;
+}
+.rightUp{
+	width: 50px;
+	height: 50px;
+	background-image: url("../image/box_RU.png");
+	float: left;
+}
+.rightDown{
+	width: 50px;
+	height: 50px;
+	background-image: url("../image/box_RD.png");
+	float: left;
+}
+.up{
+	width: 900px;
+	height: 50px;
+	background-image: url("../image/box_U.png");
+	float: left;
+}
+.down{
+	width: 900px;
+	height: 50px;
+	background-image: url("../image/box_d.png");
+	float: left;
+}
+.boxmess{
+	float: left;
+	margin: 0;
+	padding: 0;
+	width: 900px;
+	height: 300px;
+	background: #FFFFFF;
+}
+/*框架定义结束*/
+
+.view{
+	margin: 0;
+	padding: 0;
+	width: 900px;
+	height: 100%;
+	float: left;
+}
+.imagebox{
+	float: left;
+	margin: 0;
+	padding: 0;
+	width: 200px;
+	height: 300px;
+	
+}
+.image{
+	margin: 0;
+	padding: 0;
+	width: 200px;
+	height: 250px;
+}
+.word{
+	margin: 0;
+	padding: 0;
+	width: 200px;
+	height: 50px;
+	text-align: center;
+	font-size: 14px;
+	
+}
+.wordbox{
+	float: left;
+	margin: 0;
+	padding: 0px 20px;
+	width: 600px;
+	height: 300px;
+}
+#message{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 500px;
+	background: #B58BD1;
+}
+.msghead{
+	position: relative;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100px;
+	font-family: "黑体";
+	font-size: 50px;
+	font-weight: 700;
+	color: #ea5656;
+	background-image: url("../image/index_line_s.png");
+}
+.msghead p{
+	margin: 0px 0px 0px 110px;
+	padding: 20px 0px 0px 0px;
+	text-shadow: 0px 0px 6px #FFFFFF;
+}
+
+.msgtxt{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 400px;
+	background: #925F97;
+}
+#fooder{
+	clear: both;
+	height: 100px;
+	width: 100%;
+	margin: 0px 0px 0px 0px ;
+	background-image: url("../image/fooder.png");
+	background-repeat: repeat-x;
+	color: #FFFFFF;
+	text-align: center;
+}

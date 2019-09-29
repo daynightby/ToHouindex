@@ -1,0 +1,147 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	background-image:url( "../image/welcome_back.jpg");
+	margin: 0px;
+	padding: 0px;
+}
+a{
+	text-decoration:none;
+	color: #FFFFFF;
+}
+
+/*主框图*/
+#main_box{
+	height: 1200px;
+	width: 100%;
+	margin: 0px 0px 0px 0px;
+	float: left;
+	
+}
+/*顶部框图*/
+#top{
+	height: 1100px;
+	width: 800px;
+	margin: 0px 0px 0px 5%;
+	float: left;
+}
+#top img{
+	float: left;
+	padding: 0;
+	margin: 0;
+}
+#top p{
+	margin: 0;
+	padding: 0;
+	float: left;
+	font-size: 60px;
+	color:#ea5656;
+	text-shadow: 1px 1px 3px #FFFFFF;
+	font-weight: 400;
+	font-family: "幼圆";
+	text-align: center;
+} 
+/*展示框图*/
+#show{
+	height: 500px;
+	width: 800px;
+	margin: 0px 0px 0px 0px;
+	float: left;
+	position: relative;
+	/*background: #8F8EED;*/
+}
+/*轮播图片*/
+.list{/*图片列表*/
+	position: relative;
+	margin: 0;
+	list-style: none;
+	width: 788px;
+	height: 388px;
+	background: #C5C5C5;
+	border: #ea5656 solid 6px;
+	padding-left: 0;
+}
+.item{
+	position: absolute;
+	width: 788px;
+	height: 388px;
+	opacity: 0;
+	transition: all .5s;
+	padding: 0px;
+	overflow: hidden;
+	margin: 0px;
+	float: left;
+}
+.item img{
+	padding: 0px;
+	margin: 0px;
+	overflow: hidden;
+	float: left;
+}
+.item.active{
+	z-index: 90;
+	opacity: 1;
+}
+.blist{
+	padding: 0px;
+	position: relative;
+	margin: 0px 0px 0px 0px;
+	list-style: none;
+	width: 800px;
+	height: 100px;
+	
+}
+/*标签按钮*/
+.show_button{
+	margin: 0px 0px 0px 0px;
+	height: 100px;
+	width: 200px;
+	background-image: url("../image/welcome_button_1.png");
+	background-repeat: no-repeat;
+	float: left;
+	color: #FFFFFF;
+	text-align: center;
+	font-family: "幼圆";
+	font-weight: 700;
+	font-size: 22px;
+	line-height: 33px;
+	cursor: pointer;
+}
+.show_button:hover{
+	color:#FFFFFF;
+	background-image: url("../image/welcome_button_1_active.png");
+}
+/*首页按钮*/
+#enter{
+	height: 100px;
+	width: 200px;
+	margin: 100px 35% 0px 35%;
+	float: left;
+	background-image: url( "../image/welcome_button_2.png") ;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 25px;
+	font-family: "幼圆";
+	font-weight: 700;
+	line-height:33px;
+	cursor: pointer;
+}
+#enter:hover{
+	background-image: url("../image/welcome_button_2_active.png");
+	color:#ea5656;
+}
+#enter a{
+	text-decoration:none;
+}
+/*信息栏*/
+#fooder{
+	clear: both;
+	height: 100px;
+	width: 100%;
+	margin: 0px 0px 0px 0px ;
+	background-image: url("../image/fooder.png");
+	background-repeat: repeat-x;
+	color: #FFFFFF;
+	text-align: center;
+}

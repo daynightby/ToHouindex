@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>角色介绍-东方Project专题站</title>
+<link href="CSS/style_character.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div class="topimg">
+		<img src="image/character_top_word.png"/>
+	</div>
+	<div id="top">
+		<div class="head_min">
+			<img src="image/LOGO_little.png"/>
+			<ul class="head_bgrup">
+				<li class="head_li" id="hl1"><a href="welcome.html"><img src="image/menu_word_toWelcom.png"/></a></li>
+				<li class="head_li" id="hl2"><a href="index.html"><img src="image/menu_word_toIndex.png"/></a></li>
+				<li class="head_li" id="hl3"></li>
+				<li class="head_li" id="hl4"><a href="game.html"><img src="image/menu_word_toGame.png"/></a></li>
+				<li class="head_li" id="hl5"><a href="anime.html"><img src="image/menu_word_toAnime.png"/></a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="mainbox">
+		<div id="topmsg">
+			<div class="top_icon">
+			</div>
+			<div class="top_list">
+				
+				<br/><br/>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;本版块分类了东方Project正作中出现的游戏角色。</p>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;两位主角是在任何整数作品中都会登场的，其它角色按不同作品分类。</p>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;有的角色虽然在初次登场的时候是作为敌方角色登场的，但是后面也会加入可使用角色中。</p>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;而部分特殊外传游戏中有特殊的主要角色而两位主角并未作为可用角色登场.</p>
+			</div>
+			<div class="top_tear">
+			</div>
+		</div>
+		<div id="mainlist">
+			<ul class="chat">
+				<li class="charIcon" id="cHead"></li>
+				<li class="charIconMid active" data-number = "0"><br/>主角</li>
+				<li class="charIconMid" data-number = "1"><br/>东方红魔乡</li>
+				<li class="charIconMid" data-number = "2"><br/>东方妖妖梦</li>
+				<li class="charIconMid" data-number = "3"><br/>东方永夜抄</li>
+				<li class="charIcon" id="cTear"></li>
+			</ul>
+			<div class="leftUp"></div>
+			<div class="up"></div>
+			<div class="rightUp"></div>
+			<div class="left"></div>
+			<ul class="center">
+				<li class="page active">
+					<div class="item"><a href="character_reimu.html"><img src="image/character_item_1.png"/></a>博丽灵梦</div>
+					<div class="item"><a href="character_marisa.html"><img src="image/character_item_2.png"/></a>雾雨魔理沙</div>
+				</li>
+				<li class="page">
+					<div class="item"><img src="image/character_item_3.png"/>蕾米莉亚·斯卡蕾特</div>
+				</li>
+				<li class="page">
+				</li>
+				<li class="page">
+				</li>
+			</ul>
+			<div class="right"></div>
+			<div class="leftDown"></div>
+			<div class="down"></div>
+			<div class="rightDown"></div>
+		</div>
+	</div>
+	<div id="fooder">
+	</div>
+	
+	<script type="text/javascript">
+		var page = document.getElementsByClassName("page");
+		var charnum = document.getElementsByClassName("charIconMid");
+		
+		var num = 0;
+		
+		var clearActive = function(){ //重置类名
+			for (var i = 0;i < page.length; i++){
+				page[i].className = "page";
+				charnum[i].className = "charIconMid";
+			}
+		}
+		
+		
+		var turnPage = function(){
+			//跳转页面函数
+			clearActive();
+			page[num].className = "page active";
+			charnum[num].className = "charIconMid active";
+			
+		}
+		
+		for(var i = 0;i<charnum.length;i++){
+			charnum[i].addEventListener('click',function(){
+				var pointindex = this.getAttribute('data-number');
+			    num = pointindex;
+			    turnPage();
+			})
+		}
+	
+	</script>
+	
+</body>
+</html>

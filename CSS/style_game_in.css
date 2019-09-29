@@ -1,0 +1,191 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	
+	margin: 0px;
+	padding: 0px;
+	background-repeat: no-repeat;
+	background-image: url("../image/game_in_back_1.png");
+}
+
+#top{
+	position: relative;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 400px;
+}
+.pack{
+	margin: 0;
+	padding: 0;
+	width: 400px;
+	height: 400px;
+	float: left;
+	background: #759F72;
+}
+
+#head{
+	position: relative;
+	margin: 0px 0px 0px 0px;
+	padding: 0px;
+	width: 100%;
+	height: 100px;
+	float: right;
+	background-image:url("../image/fooder.png")
+}
+
+.topimg{
+	width: 1000px;
+	height: 150px;
+	margin: 250px auto 0px auto;
+	padding: 0px;
+}
+
+.head_min{
+	position: absolute;
+	padding: 0px;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	width: 1000px;
+	height: 100px;
+	float: left;
+}
+.head_bgrup{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	width: 750px;
+	height: 60px;
+	float: right;
+}
+.head_li{
+	float: left;
+	padding: 0;
+	margin: 20px 0px 20px 0px;
+	width: 150px;
+	height: 60px;
+	cursor: pointer;
+}
+#hl1{
+	background-image: url("../image/menu_word_toWelcom.png")
+}
+#hl2{
+	background-image: url("../image/menu_word_toIndex.png")
+}
+#hl3{
+	background-image: url("../image/menu_word_toCharacter.png")
+}
+#hl4{
+	background-image: url("../image/menu_word_toGame_active.png")
+}
+#hl5{
+	background-image: url("../image/menu_word_toAnime.png")
+}
+
+#hl1:hover{
+	background-image: url("../image/menu_word_toWelcom_active.png")
+}
+#hl2:hover{
+	background-image: url("../image/menu_word_toIndex_active.png")
+}
+#hl3:hover{
+	background-image: url("../image/menu_word_toCharacter_active.png")
+}
+#hl4:hover{
+	background-image: url("../image/menu_word_toGame_active.png")
+}
+#hl5:hover{
+	background-image: url("../image/menu_word_toAnime_active.png")
+}
+
+#mainbox{
+	position: relative;
+	padding: 0px;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	padding: 0;
+	width: 1000px;
+	height: 1900px;
+	overflow: hidden;
+}
+
+
+
+
+/*框架定义*/
+.left{
+	width: 50px;
+	height: 500px;
+	background-image: url("../image/box_L.png");
+	float: left;
+}
+.right{
+	width: 50px;
+	height: 500px;
+	background-image: url("../image/box_R.png");
+	float: left;
+}
+
+.leftUp{
+	width: 50px;
+	height: 50px;
+	background-image: url("../image/box_LU.png");
+	float: left;
+}
+.leftDown{
+	width: 50px;
+	height: 50px;
+	background-image: url("../image/box_LD.png");
+	float: left;
+}
+.rightUp{
+	width: 50px;
+	height: 50px;
+	background-image: url("../image/box_RU.png");
+	float: left;
+}
+.rightDown{
+	width: 50px;
+	height: 50px;
+	background-image: url("../image/box_RD.png");
+	float: left;
+}
+.up{
+	width: 900px;
+	height: 50px;
+	background-image: url("../image/box_U.png");
+	float: left;
+}
+.down{
+	width: 900px;
+	height: 50px;
+	background-image: url("../image/box_d.png");
+	float: left;
+}
+.boxmess{
+	float: left;
+	margin: 0;
+	padding: 0;
+	width: 900px;
+	height: 300px;
+	background: #FFFFFF;
+}
+/*框架定义结束*/
+
+#fooder{
+	clear: both;
+	height: 100px;
+	width: 100%;
+	margin: 0px 0px 0px 0px ;
+	background-image: url("../image/fooder.png");
+	background-repeat: repeat-x;
+	color: #FFFFFF;
+	text-align: center;
+}

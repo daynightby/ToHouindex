@@ -1,0 +1,320 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	
+	margin: 0px;
+	padding: 0px;
+	background-image: url( "../image/anime_back.png");
+	background-repeat: no-repeat;
+}
+
+#top{
+	position: relative;
+	margin: 0px 0px 0px 0px;
+	padding: 0px;
+	width: 100%;
+	height: 100px;
+	background-image:url("../image/fooder.png")
+}
+
+.msgWord{
+	text-align: center;
+	font-size: 14px;
+	width: 900px;
+	height: 25px;
+	margin: 0 auto;
+}
+
+.topimg{
+	width: 1000px;
+	height: 300px;
+	margin: 100px auto 0px auto;
+	padding: 0px;
+}
+
+.head_min{
+	position: absolute;
+	padding: 0px;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	width: 1000px;
+	height: 100px;
+	float: left;
+}
+.head_bgrup{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	width: 750px;
+	height: 60px;
+	float: right;
+}
+.head_li{
+	float: left;
+	padding: 0;
+	margin: 20px 0px 20px 0px;
+	width: 150px;
+	height: 60px;
+	cursor: pointer;
+}
+#hl1{
+	background-image: url("../image/menu_word_toWelcom.png")
+}
+#hl2{
+	background-image: url("../image/menu_word_toIndex.png")
+}
+#hl3{
+	background-image: url("../image/menu_word_toCharacter.png")
+}
+#hl4{
+	background-image: url("../image/menu_word_toGame.png")
+}
+#hl5{
+	background-image: url("../image/menu_word_toAnime_active.png")
+}
+
+#hl1:hover{
+	background-image: url("../image/menu_word_toWelcom_active.png")
+}
+#hl2:hover{
+	background-image: url("../image/menu_word_toIndex_active.png")
+}
+#hl3:hover{
+	background-image: url("../image/menu_word_toCharacter_active.png")
+}
+#hl4:hover{
+	background-image: url("../image/menu_word_toGame_active.png")
+}
+#hl5:hover{
+	background-image: url("../image/menu_word_toAnime_active.png")
+}
+
+
+
+/*菜单栏*/
+#topmsg{
+	margin: 0px 0px 0px 0px;
+	padding: 0px;
+	width: 100%;
+	height: 300px;
+}
+.top_icon{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 150px;
+	background-image: url("../image/index_roder_icon.png");
+	float: left;
+}
+.top_list{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 800px;
+	background-image: url("../image/index_roder_mind.png");
+	background-repeat: repeat-x;
+	float: left;
+}
+.top_list_li{
+	margin: 0;
+	padding: 0;
+	width: 200px;
+	height: 100%;
+	float: left;
+}
+.top_tear{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 50px;
+	background-image: url("../image/index_roder_tear.png");
+	float: left;
+}
+#mainbox{
+	position: relative;
+	margin: 0 auto;
+	padding: 0;
+	width: 1000px;
+	height: 2300px;
+	overflow: hidden;
+}
+#mainlist{
+	position: relative;
+	margin: 0;
+	padding: 0;
+	width: 1000px;
+	height: 2000px;
+	overflow: hidden;
+}
+
+.chat{
+	position: relative;
+	float: left;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	width: 1000px;
+	height: 150px;
+}
+.charIcon{
+	float: left;
+	margin: 0;
+	padding: 0;
+	width: 800px;
+	height: 150px;
+}
+#cHead{
+	background-image: url("../image/anime_chat_top.png");
+	width: 100px;
+	height: 150px;
+	overflow: hidden;
+	background-repeat: no-repeat;
+}
+.charIconMid{
+	float: left;
+	width: 400px;
+	height: 150px;
+	text-align: center;
+	font-size: 25px;
+	color: #ea5656;
+	cursor: pointer;
+	
+}
+.charIconMid:hover{
+	background-image: url("../image/anime_chat_icon_active.png");
+	color: #FFFFFF;
+}
+.charIconMid.active{
+	background-image: url("../image/anime_chat_icon_active.png");
+	color: #FFFFFF;
+}
+#cTear{
+	background-image: url("../image/anime_chat_tear.png");
+	width: 100px;
+	height: 150px;
+	overflow: hidden;
+	background-repeat: no-repeat;
+}
+/*页面*/
+.center{
+	position: relative;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	width: 900px;
+	height: 1500px;
+	float: left;
+}
+.page{
+	z-index: 0;
+	opacity: 0;
+	transition: all .5s;
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	width: 900px;
+	height: 1500px;
+	float: left;
+}
+.page.active{
+	opacity: 1;
+	z-index: 5;
+}
+.item{
+	margin: 0;
+	padding: 0;
+	width: 350px;
+	height: 250px;
+	text-align: center;
+	float: left;
+	overflow: hidden;
+	cursor: pointer;
+	
+}
+.item:hover{
+	background-image: url("../image/game_item_active.png");
+	background-repeat: no-repeat;
+}
+
+.elText{
+	margin: 0;
+	padding: 0px;
+	width: 100%;
+	height: 100%;
+}
+/*框架定义*/
+.left{
+	width: 50px;
+	height: 1500px;
+	background-image: url("../image/box_L.png");
+	float: left;
+}
+.right{
+	width: 50px;
+	height: 1500px;
+	background-image: url("../image/box_R.png");
+	float: left;
+}
+
+.leftUp{
+	width: 50px;
+	height: 50px;
+	background-image: url("../image/box_LU.png");
+	float: left;
+}
+.leftDown{
+	width: 50px;
+	height: 50px;
+	background-image: url("../image/box_LD.png");
+	float: left;
+}
+.rightUp{
+	width: 50px;
+	height: 50px;
+	background-image: url("../image/box_RU.png");
+	float: left;
+}
+.rightDown{
+	width: 50px;
+	height: 50px;
+	background-image: url("../image/box_RD.png");
+	float: left;
+}
+.up{
+	width: 900px;
+	height: 50px;
+	background-image: url("../image/box_U.png");
+	float: left;
+}
+.down{
+	width: 900px;
+	height: 50px;
+	background-image: url("../image/box_d.png");
+	float: left;
+}
+.boxmess{
+	float: left;
+	margin: 0;
+	padding: 0;
+	width: 900px;
+	height: 300px;
+	background: #FFFFFF;
+}
+/*框架定义结束*/
+
+#fooder{
+	clear: both;
+	height: 100px;
+	width: 100%;
+	margin: 0px 0px 0px 0px ;
+	background-image: url("../image/fooder.png");
+	background-repeat: repeat-x;
+	color: #FFFFFF;
+	text-align: center;
+}

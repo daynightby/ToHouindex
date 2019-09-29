@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>幻想结社-东方Project介绍专题站</title>
+	
+<script src="jquery-3.4.1.min.js"></script>
+
+<link href="CSS/style_welcome.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div id="main_box">
+		<div id="top">
+			<img src="image/LOGO.png"><img src="image/welcome_title.png">
+			<div id="show">
+				<ul class="list">
+					<li class="item active"><img src="image/welcom_show_img_1.jpg"/></li>
+					<li class="item"><img src="image/welcom_show_img_2.jpg" /></li>
+					<li class="item"><img src="image/welcom_show_img_3.jpg" /></li>
+					<li class="item"><img src="image/welcom_show_img_4.jpg" /></li>
+				</ul>
+				
+				<ul class="blist">
+					<li class="show_button" data-number = "0"><a href="character_reimu.html"><br/>博丽灵梦</a></li>
+					<li class="show_button" data-number = "1"><a href="game.html"><br/>游戏介绍</a></li>
+					<li class="show_button" data-number = "2"><a href="characte.html"><br/>角色介绍</a></li>
+					<li class="show_button" data-number = "3"><a href="anime.html"><br/>动画介绍</a></li>
+				</ul>
+				
+			</div>
+			<div id="enter">
+				<br/>
+				<a href="index.html">详细介绍</a>
+			</div>
+		</div>
+		<div id="fooder">
+		</div>
+	</div>
+	
+	<!--JS代码-->
+	<script type="text/javascript">
+		
+		var items = document.getElementsByClassName('item');
+		var button = document.getElementsByClassName('show_button');
+		
+		var number = 0;//图片下标
+		
+		var time = 0;//跳转时间
+		
+		var timer = null;//计时器
+		
+		
+		var clearActive = function(){ //重置类名
+			for (var i = 0;i < items.length; i++){
+				items[i].className = "item";
+			}
+		}
+		
+		
+		var goIndex = function(){ //跳转至当前页面
+			clearActive();
+			items[number].className = "item active";
+		}
+		
+		var goNext = function(){ //下一张
+			if(number < 3){
+				number++;
+			}else{
+				number = 0;
+			}
+			goIndex();
+		}
+		
+		$(".show_button").mouseover(function(){
+			var pointindex = this.getAttribute('data-number');
+				number = pointindex;
+				goIndex();
+				time = 0;
+			    clearInterval(timer);
+			    clearInterval(firstT);
+		})
+		
+		$(".show_button").mouseout(function(){
+			    timer = setInterval(function(){ //定时器
+				time++;
+				if(time == 30){
+				goNext();
+				time=0;
+				}
+			}, 100)
+		})
+		
+		var firstT = setInterval(function(){ //定时器
+			time++;
+			if(time == 30){
+				goNext();
+				time=0;
+			}
+		}, 100)
+		
+		
+	</script>
+</body>
+</html>
